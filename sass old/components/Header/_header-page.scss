@@ -1,0 +1,15 @@
+.header {
+    background-color: $color-light-title;
+
+    &__border {
+        border-bottom: 1px solid #ececec;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
