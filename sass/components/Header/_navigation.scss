@@ -16,16 +16,14 @@
 
     color: $color-dark-subtitle;
 
-    &:not(:last-child) {
-        margin-bottom: 32px;
-    }
+    
 }
 
 @media screen and (min-width: 768px) {
     .navigation__item {
         position: relative;
         font-size: 14px;
-        margin-bottom: 32px;
+        margin-bottom: 0;
         &:not(:last-child) {
             margin-right: 50px;
         }
@@ -41,6 +39,9 @@
     &:focus {
         color: $accent-color;
     }
+        &:not(:last-child) {
+            padding-bottom: 32px;
+        }
     
 }
 
