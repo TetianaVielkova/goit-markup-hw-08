@@ -19,12 +19,12 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 510px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 798px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -999,16 +999,6 @@ b {
   color: #fff;
 }
 
-@media screen and (min-width: 768px) {
-  .logo--notpadding {
-    margin: 16px 15px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .logo--notpadding {
-    margin: 0px;
-  }
-}
 .footer__address {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1023,6 +1013,11 @@ b {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__address {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__address {
     -webkit-box-align: start;
@@ -1068,6 +1063,11 @@ b {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe {
+    margin-bottom: 0;
+  }
+}
 .subscribe__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1115,6 +1115,12 @@ b {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__form {
+    margin-bottom: 0;
+    margin-top: 60px;
+  }
+}
 .form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1175,9 +1181,9 @@ b {
             justify-content: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .form__email {
-    max-width: 358px;
+    min-width: 358px;
   }
 }
 .form-label {
