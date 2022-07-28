@@ -1,54 +1,17 @@
-.hero {
-    background-color: $dark-background;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url('/images/mobile/bg.jpg');
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 1600px;
-    margin-right: auto;
-    margin-left: auto;
-
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .hero {
-                background-image: linear-gradient(to right,
-                        rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)), url('/images/mobile/bg@2x.jpg');
-            }
-        }
-}
-
-
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
     .hero {
-        background-image: linear-gradient(to right,
-                    rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
-                url('/images/tablet/bg.jpg');
-    }
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            .hero {
-                background-image: linear-gradient(to right,
-                        rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)), url('/images/tablet/bg@2x.jpg');
-            }
-        }
-}
-
-@media screen and (min-width: 1200px) {
-    .hero {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1600px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 118px;
+        padding-bottom: 118px;
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url('/images/desktop/bg.jpg');
+            url('../images/mobile/bg.jpg');
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -57,7 +20,48 @@
         .hero {
             background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)), url('/images/desktop/bg@2x.jpg');
+                    rgba(47, 48, 58, 0.4)), url('../images/mobile/bg@2x.jpg');
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 118px;
+        padding-bottom: 118px;
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url('../images/tablet/bg.jpg');
+    }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)), url('../images/tablet/bg@2x.jpg');
+            }
+        }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url('../images/desktop/bg.jpg');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)), url('../images/desktop/bg@2x.jpg');
         }
     }
 }

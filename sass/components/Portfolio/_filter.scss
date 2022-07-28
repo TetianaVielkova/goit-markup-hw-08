@@ -6,16 +6,26 @@
 @media screen and (min-width: 768px) {
     .filter {
         justify-content: center;
-        align-items: center;
     }
-}
-
-.filter__item:not(:last-child) {
-    margin-right: 8px;
 }
 
 .filter__item {
     margin-bottom: 15px;
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .filter__item:nth-last-child(-n+2) {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .filter__item {
+        margin-bottom: 0;
+    }
 }
 
 .filter__button {

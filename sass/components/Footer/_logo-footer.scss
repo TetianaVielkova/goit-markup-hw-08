@@ -6,15 +6,3 @@
 .logo__light-color {
     color: $color-light-title;
 }
-
-@media screen and (min-width: 768px) {
-    .logo--notpadding {
-        margin: 16px 15px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .logo--notpadding {
-        margin: 0px;
-    }
-}

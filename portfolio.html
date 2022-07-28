@@ -29,7 +29,6 @@
         <button
           class="menu-button js-open-menu"
           type="button"
-          aria-controls="header__menu--conteiner"
           aria-expanded="false"
         >
           <svg
@@ -44,11 +43,7 @@
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <button
-                  class="button__menu--close js-close-menu"
-                  type="button"
-                  aria-controls="header__menu--conteiner"
-                >
+                <button class="button__menu--close js-close-menu" type="button">
                   <svg width="40" height="40">
                     <use href="./images/svg/icons.svg#icon-close1"></use>
                   </svg>
@@ -113,27 +108,19 @@
           <h2 class="visually-hidden section__title">Портфолио</h2>
           <ul class="filter">
             <li class="filter__item">
-              <button type="button" class="filter__button" href="#">Все</button>
+              <button type="button" class="filter__button">Все</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="filter__button" href="#">
-                Веб-сайты
-              </button>
+              <button type="button" class="filter__button">Веб-сайты</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="filter__button" href="#">
-                Приложения
-              </button>
+              <button type="button" class="filter__button">Приложения</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="filter__button" href="#">
-                Дизайн
-              </button>
+              <button type="button" class="filter__button">Дизайн</button>
             </li>
             <li class="filter__item">
-              <button type="button" class="filter__button" href="#">
-                Маркетинг
-              </button>
+              <button type="button" class="filter__button">Маркетинг</button>
             </li>
           </ul>
           <ul class="cards">
@@ -153,6 +140,13 @@
                       srcset="
                         ./images/tablet/portfolio/img1.jpg    1x,
                         ./images/tablet/portfolio/img1@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio/img1.jpg    1x,
+                        ./images/mobile/portfolio/img1@2x.jpg 2x
                       "
                     />
                     <img
@@ -194,6 +188,13 @@
                       srcset="
                         ./images/tablet/portfolio/img2.jpg    1x,
                         ./images/tablet/portfolio/img2@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio/img2.jpg    1x,
+                        ./images/mobile/portfolio/img2@2x.jpg 2x
                       "
                     />
                     <img
@@ -242,6 +243,13 @@
                         ./images/tablet/portfolio/img3@2x.jpg 2x
                       "
                     />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio/img3.jpg    1x,
+                        ./images/mobile/portfolio/img3@2x.jpg 2x
+                      "
+                    />
                     <img
                       class="cards__img"
                       srcset="
@@ -284,6 +292,13 @@
                       srcset="
                         ./images/tablet/portfolio/img4.jpg    1x,
                         ./images/tablet/portfolio/img4@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio/img4.jpg    1x,
+                        ./images/mobile/portfolio/img4@2x.jpg 2x
                       "
                     />
                     <img
@@ -330,6 +345,13 @@
                         ./images/tablet/portfolio/img5@2x.jpg 2x
                       "
                     />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio/img5.jpg    1x,
+                        ./images/mobile/portfolio/img5@2x.jpg 2x
+                      "
+                    />
                     <img
                       class="cards__img"
                       srcset="
@@ -374,6 +396,13 @@
                         ./images/tablet/portfolio/img6@2x.jpg 2x
                       "
                     />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio/img6.jpg    1x,
+                        ./images/mobile/portfolio/img6@2x.jpg 2x
+                      "
+                    />
                     <img
                       class="cards__img"
                       srcset="
@@ -415,6 +444,13 @@
                       srcset="
                         ./images/tablet/portfolio/img7.jpg    1x,
                         ./images/tablet/portfolio/img7@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio/img7.jpg    1x,
+                        ./images/mobile/portfolio/img7@2x.jpg 2x
                       "
                     />
                     <img
@@ -463,6 +499,13 @@
                         ./images/tablet/portfolio/img8@2x.jpg 2x
                       "
                     />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio/img8.jpg    1x,
+                        ./images/mobile/portfolio/img8@2x.jpg 2x
+                      "
+                    />
                     <img
                       class="cards__img"
                       srcset="
@@ -504,6 +547,13 @@
                       srcset="
                         ./images/tablet/portfolio/img9.jpg    1x,
                         ./images/tablet/portfolio/img9@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio/img9.jpg    1x,
+                        ./images/mobile/portfolio/img9@2x.jpg 2x
                       "
                     />
                     <img
@@ -606,6 +656,7 @@
                   class="form__email"
                   type="email"
                   name="email"
+                  id="user-email"
                   placeholder="E-mail"
                 />
               </label>

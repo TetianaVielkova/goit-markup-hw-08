@@ -29,7 +29,6 @@
         <button
           class="menu-button js-open-menu"
           type="button"
-          aria-controls="header__menu--conteiner"
           aria-expanded="false"
         >
           <svg
@@ -44,11 +43,7 @@
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <button
-                  class="button__menu--close js-close-menu"
-                  type="button"
-                  aria-controls="header__menu--conteiner"
-                >
+                <button class="button__menu--close js-close-menu" type="button">
                   <svg width="40" height="40">
                     <use href="./images/svg/icons.svg#icon-close1"></use>
                   </svg>
@@ -239,6 +234,13 @@
                     ./images/tablet/team/team1@2x.jpg 2x
                   "
                 />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team/team1.jpg    1x,
+                    ./images/mobile/team/team1@2x.jpg 2x
+                  "
+                />
                 <img
                   class="team__img"
                   srcset="
@@ -293,7 +295,6 @@
                     ./images/desktop/team/team2.jpg    1x,
                     ./images/desktop/team/team2@2x.jpg 2x
                   "
-                  sizes="(min-width: 1200px), 25vw"
                 />
                 <source
                   media="(min-width: 768px)"
@@ -301,7 +302,13 @@
                     ./images/tablet/team/team2.jpg    1x,
                     ./images/tablet/team/team2@2x.jpg 2x
                   "
-                  sizes="(min-width: 768px), 50vw"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team/team2.jpg    1x,
+                    ./images/mobile/team/team2@2x.jpg 2x
+                  "
                 />
                 <img
                   class="team__img"
@@ -309,7 +316,6 @@
                     ./images/mobile/team/team2.jpg    1x,
                     ./images/mobile/team/team2@2x.jpg 2x
                   "
-                  sizes="(min-width: 480px), 100vw"
                   src="./images/mobile/team/team2.jpg"
                   width="450"
                   alt="Фото сотрудника"
@@ -358,7 +364,6 @@
                     ./images/desktop/team/team3.jpg    1x,
                     ./images/desktop/team/team3@2x.jpg 2x
                   "
-                  sizes="(min-width: 1200px), 25vw"
                 />
                 <source
                   media="(min-width: 768px)"
@@ -366,7 +371,13 @@
                     ./images/tablet/team/team3.jpg    1x,
                     ./images/tablet/team/team3@2x.jpg 2x
                   "
-                  sizes="(min-width: 768px), 50vw"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team/team3.jpg    1x,
+                    ./images/mobile/team/team3@2x.jpg 2x
+                  "
                 />
                 <img
                   class="team__img"
@@ -374,7 +385,6 @@
                     ./images/mobile/team/team3.jpg    1x,
                     ./images/mobile/team/team3@2x.jpg 2x
                   "
-                  sizes="(min-width: 480px), 100vw"
                   src="./images/mobile/team/team3.jpg"
                   width="450"
                   alt="Фото сотрудника"
@@ -423,7 +433,6 @@
                     ./images/desktop/team/team4.jpg    1x,
                     ./images/desktop/team/team4@2x.jpg 2x
                   "
-                  sizes="(min-width: 1200px), 25vw"
                 />
                 <source
                   media="(min-width: 768px)"
@@ -431,7 +440,13 @@
                     ./images/tablet/team/team4.jpg    1x,
                     ./images/tablet/team/team4@2x.jpg 2x
                   "
-                  sizes="(min-width: 768px), 50vw"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/mobile/team/team4.jpg    1x,
+                    ./images/mobile/team/team4@2x.jpg 2x
+                  "
                 />
                 <img
                   class="team__img"
@@ -439,7 +454,6 @@
                     ./images/mobile/team/team4.jpg    1x,
                     ./images/mobile/team/team4@2x.jpg 2x
                   "
-                  sizes="(min-width: 480px), 100vw"
                   src="./images/mobile/team/team4.jpg"
                   width="450"
                   alt="Фото сотрудника"
@@ -606,6 +620,7 @@
                   class="form__email"
                   type="email"
                   name="email"
+                  id="user-email"
                   placeholder="E-mail"
                 />
               </label>
@@ -639,21 +654,21 @@
               autofocus
               autocomplete="off"
             />
-            <svg class="field__icon" width="12" hieght="12">
+            <svg class="field__icon" width="12">
               <use href="./images/svg/icons.svg#icon-user"></use>
             </svg>
           </div>
           <div class="field">
             <label class="field__label" for="tel">Телефон</label>
             <input class="field__input" type="tel" name="tel" id="tel" />
-            <svg class="field__icon" width="13" hieght="13">
+            <svg class="field__icon" width="13">
               <use href="./images/svg/icons.svg#icon-tel"></use>
             </svg>
           </div>
           <div class="field">
             <label class="field__label" for="mail">Почта</label>
             <input class="field__input" type="email" name="mail" id="mail" />
-            <svg class="field__icon" width="15" hieght="12">
+            <svg class="field__icon" width="15">
               <use href="./images/svg/icons.svg#icon-email"></use>
             </svg>
           </div>
@@ -674,10 +689,10 @@
                 name="contract"
                 id="contract"
               />
-              <svg class="checkbox__icon" width="16" hieght="15">
+              <svg class="checkbox__icon" width="16">
                 <use href="./images/svg/icons.svg#icon-check"></use>
               </svg>
-              Соглашаюсь с рассылкой и принимаю &nbsp<span
+              Соглашаюсь с рассылкой и принимаю &nbsp;<span
                 class="checkbox__link--blue"
                 >Условия договора</span
               ></label
